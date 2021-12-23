@@ -313,6 +313,7 @@ public:
 	unsigned char* GlyfBin(void); 
 	Areas::Area GetBoundingBox(void);
 	void GetHeights(int32_t *emHeight, int32_t *descender, int32_t *baseHeight, int32_t *meanHeight, int32_t *capHeight, int32_t *ascender);
+	void GetHeights(int32_t* emHeight);
 	bool GetHMTXEntry(int32_t glyphIndex, int32_t *leftSideBearing, int32_t *advanceWidth);
 	bool GetVDMXEntry(int32_t xResolution, int32_t yResolution, int32_t ppemSize, F26Dot6 *descender, F26Dot6 *ascender); // returns false if not avail for this font/resolution ratio/ppem size
 	int32_t NumberOfGlyphs(void);

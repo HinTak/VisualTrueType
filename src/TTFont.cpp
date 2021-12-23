@@ -1715,6 +1715,11 @@ void TrueTypeFont::GetHeights(int32_t *emHeight, int32_t *descender, int32_t *ba
 	*ascender = Max(this->metricProfile.yMax,*descender + this->unitsPerEm);
 } // TrueTypeFont::GetHeights
 
+void TrueTypeFont::GetHeights(int32_t* emHeight)
+{
+	*emHeight = this->unitsPerEm;
+} // TrueTypeFont::GetHeights
+
 bool TrueTypeFont::GetHMTXEntry(int32_t glyphIndex, int32_t *leftSideBearing, int32_t *advanceWidth) {
 	sfnt_HorizontalMetrics *horMetric;
 
