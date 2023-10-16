@@ -3,6 +3,7 @@
 // Licensed under the MIT License.
 
 #include "pch.h"
+#undef swprintf
 
 const wchar_t  *gszVTTInstructionStr[256] =
        {
